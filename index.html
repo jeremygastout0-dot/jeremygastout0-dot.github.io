@@ -2,10 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Jerem Services 11 | Entretien jardin & Nettoyage extérieur</title>
+<title>Jerem Services 11 | Jardin & Nettoyage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jerem Services 11 – Entretien de jardin, nettoyage extérieur, toiture, haies, élagage. Intervention rapide – Devis gratuit.">
-<meta name="author" content="Jerem Services 11">
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4SETRQ5X"></script>
@@ -19,20 +17,14 @@ gtag('config', 'G-4D4SETRQ5X');
 <style>
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background: #f4f6f5;
   color: #333;
 }
 
-h2 {
-  text-align: center;
-  color: #2e7d32;
-}
-
-/* HERO */
 .hero {
-  height: 100vh;
   background: url("images/hero.jpg") center/cover no-repeat;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,119 +32,105 @@ h2 {
   color: white;
 }
 
-.hero-overlay {
+.hero-box {
   background: rgba(0,0,0,0.55);
-  padding: 40px;
-  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
 }
 
 .hero img {
-  width: 140px;
-  margin-bottom: 20px;
+  width: 120px;
+  margin-bottom: 15px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 2.5em;
   margin: 10px 0;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
-.hero .btn {
+.btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 15px 30px;
-  background: #43a047;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #2e7d32;
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  border-radius: 6px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 30px;
 }
 
 /* SLIDER */
 .slider {
-  max-width: 100%;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .slides {
   display: flex;
-  animation: slide 18s infinite;
+  width: 400%;
+  animation: slide 16s infinite;
 }
 
 .slides img {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
 }
 
 @keyframes slide {
-  0% {transform: translateX(0);}
-  20% {transform: translateX(0);}
-  25% {transform: translateX(-100%);}
-  45% {transform: translateX(-100%);}
-  50% {transform: translateX(-200%);}
-  70% {transform: translateX(-200%);}
-  75% {transform: translateX(-300%);}
-  100% {transform: translateX(-300%);}
+  0% {margin-left: 0;}
+  25% {margin-left: -100%;}
+  50% {margin-left: -200%;}
+  75% {margin-left: -300%;}
 }
 
-/* SECTIONS */
-section {
-  padding: 50px 20px;
-  background: white;
-  margin-bottom: 20px;
-}
-
+/* SERVICES */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.service {
-  background: #e8f5e9;
+.card {
+  background: white;
   padding: 20px;
-  border-radius: 8px;
-  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 /* AVIS */
 .avis {
-  background: #f1f8e9;
-}
-
-.avis-box {
-  max-width: 800px;
-  margin: auto;
-}
-
-.avis-item {
-  background: white;
+  background: #ffffff;
+  border-left: 5px solid #2e7d32;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
 
 .stars {
-  color: #ffc107;
-  font-size: 20px;
+  color: #fbc02d;
 }
 
-/* CONTACT */
-.contact {
-  text-align: center;
+/* FOOTER */
+footer {
   background: #2e7d32;
   color: white;
-}
-
-.contact a {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-  font-weight: bold;
+  text-align: center;
+  padding: 30px;
 }
 </style>
 </head>
@@ -161,63 +139,67 @@ section {
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-overlay">
-    <img src="images/logo.png" alt="Jerem Services 11">
+  <div class="hero-box">
+    <img src="images/logo.png" alt="Logo Jerem Services 11">
     <h1>Jerem Services 11</h1>
-    <p>Entretien de jardin & Nettoyage extérieur<br>
-    Intervention rapide – Devis gratuit</p>
+    <p>Entretien de jardin & Nettoyage extérieur</p>
+    <p>Intervention rapide – Devis gratuit</p>
     <a class="btn" href="tel:0769721800">📞 07 69 72 18 00</a>
   </div>
 </div>
 
 <!-- SLIDER -->
-<div class="slider">
-  <div class="slides">
-    <img src="images/tonte.jpg" alt="Tonte de pelouse">
-    <img src="images/haie.jpg" alt="Taille de haies">
-    <img src="images/el agage.jpg" alt="Élagage">
-    <img src="images/toiture.jpg" alt="Nettoyage toiture">
+<section>
+  <h2>Nos réalisations</h2>
+  <div class="slider">
+    <div class="slides">
+      <img src="images/tonte.jpg">
+      <img src="images/haie.jpg">
+      <img src="images/elagage.jpg">
+      <img src="images/toiture.jpg">
+    </div>
   </div>
-</div>
+</section>
 
 <!-- SERVICES -->
 <section>
-  <h2>🌿 Nos prestations</h2>
+  <h2>Nos prestations</h2>
   <div class="services">
-    <div class="service">Tonte de pelouse</div>
-    <div class="service">Taille de haies & arbustes</div>
-    <div class="service">Élagage / Abattage</div>
-    <div class="service">Nettoyage toiture</div>
-    <div class="service">Nettoyage extérieur</div>
-    <div class="service">Entretien jardins & plantations</div>
+    <div class="card">🌱 Tonte de pelouse</div>
+    <div class="card">✂️ Taille de haies & arbustes</div>
+    <div class="card">🌳 Élagage & abattage</div>
+    <div class="card">🧼 Nettoyage toiture & façades</div>
+    <div class="card">🌸 Plantation & entretien</div>
+    <div class="card">🏊 Nettoyage de piscine</div>
   </div>
 </section>
 
 <!-- AVIS -->
-<section class="avis">
-  <h2>⭐ Avis clients</h2>
-  <div class="avis-box">
-    <div class="avis-item">
-      <div class="stars">★★★★★</div>
-      Travail impeccable, très pro et rapide. Je recommande !
-    </div>
-    <div class="avis-item">
-      <div class="stars">★★★★★</div>
-      Jardin transformé, excellent rapport qualité/prix.
-    </div>
-    <div class="avis-item">
-      <div class="stars">★★★★★</div>
-      Sérieux, ponctuel et efficace. Merci Jerem Services 11.
-    </div>
+<section>
+  <h2>Avis clients</h2>
+
+  <div class="avis">
+    <div class="stars">★★★★★</div>
+    Travail impeccable, très sérieux et rapide. Je recommande !
+  </div>
+
+  <div class="avis">
+    <div class="stars">★★★★★</div>
+    Jardin transformé, personne ponctuelle et efficace.
+  </div>
+
+  <div class="avis">
+    <div class="stars">★★★★★</div>
+    Nettoyage toiture parfait, excellent rapport qualité/prix.
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
-  <h2>Contact</h2>
-  <p>📞 <a href="tel:0769721800">07 69 72 18 00</a></p>
-  <p>Intervention Occitanie – Particuliers & Pros</p>
-</section>
+<!-- FOOTER -->
+<footer>
+  📍 Intervention Occitanie <br>
+  📞 07 69 72 18 00 <br><br>
+  © 2026 – Jerem Services 11
+</footer>
 
 </body>
 </html>
