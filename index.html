@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
-  <title>Jeremservice11 | Entretien de jardin & nettoyage industriel</title>
+  <title>Jeremservice11 | Entretien jardin & nettoyage</title>
 
-  <meta name="description" content="Jeremservice11 – Entretien de jardin et nettoyage industriel en Occitanie. Devis gratuit.">
-  <meta name="keywords" content="entretien jardin, nettoyage industriel, espaces verts, Occitanie">
+  <meta name="description" content="Jeremservice11 – Entretien de jardin, taille de haies, tonte, débroussaillage et nettoyage extérieur en Occitanie.">
+  <meta name="keywords" content="entretien jardin, tonte pelouse, taille haies, nettoyage toiture, débroussaillage">
   <meta name="author" content="Jeremservice11">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,63 +22,66 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #f2f2f2;
+      background: #f4f4f4;
       color: #333;
     }
 
     header {
-      background-color: #2e7d32;
+      background: #2e7d32;
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    section {
+      padding: 30px 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .services div {
+      background: #e8f5e9;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-left: 6px solid #2e7d32;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .contact {
+      background: #2e7d32;
       color: white;
       text-align: center;
       padding: 30px 15px;
     }
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-    }
-
-    h1, h2 {
-      color: #2e7d32;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      background: #e8f5e9;
-      margin: 10px 0;
-      padding: 10px;
-      border-left: 5px solid #2e7d32;
-    }
-
-    .contact {
-      background: #f1f1f1;
-      padding: 20px;
-      text-align: center;
-      margin-top: 20px;
-    }
-
     .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background: #2e7d32;
       color: white;
+      font-size: 22px;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
-      background: #333;
-      color: white;
       padding: 15px;
-      margin-top: 20px;
+      font-size: 14px;
+      background: #ddd;
     }
   </style>
 </head>
@@ -88,32 +90,51 @@
 
 <header>
   <h1>Jeremservice11</h1>
-  <p>Entretien de jardin & nettoyage industriel – Occitanie</p>
+  <p>Entretien de jardin & nettoyage extérieur</p>
 </header>
 
 <section>
   <h2>Nos services</h2>
-  <ul>
-    <li>Tonte de pelouse</li>
-    <li>Taille de haies et d’arbustes</li>
-    <li>Débroussaillage</li>
-    <li>Évacuation des déchets verts</li>
-    <li>Nettoyage industriel de bâtiments</li>
-    <li>Nettoyage extérieur (terrasses, allées, toitures)</li>
-  </ul>
-
-  <h2>Zone d’intervention</h2>
-  <p>Nous intervenons en <strong>Occitanie</strong> pour particuliers et professionnels.</p>
-
-  <div class="contact">
-    <h2>Contact</h2>
-    <p>📞 07 69 72 18 00</p>
-    <a href="tel:0769721800">Appeler maintenant</a>
+  <div class="services">
+    <div>Tonte de pelouse</div>
+    <div>Taille de haies et d’arbustes</div>
+    <div>Débroussaillage</div>
+    <div>Évacuation des déchets verts</div>
+    <div>Nettoyage industriel de bâtiments</div>
+    <div>Nettoyage extérieur (terrasses, allées, toitures)</div>
   </div>
 </section>
 
+<section>
+  <h2>Avant / Après – Réalisations</h2>
+  <div class="gallery">
+    <img src="images/jardin-avant.jpg" alt="Jardin avant">
+    <img src="images/jardin-apres.jpg" alt="Jardin après">
+
+    <img src="images/arbre-avant.jpg" alt="Arbre avant">
+    <img src="images/arbre-apres.jpg" alt="Arbre après">
+
+    <img src="images/mur-avant.jpg" alt="Mur avant">
+    <img src="images/mur-apres.jpg" alt="Mur après">
+
+    <img src="images/toiture.jpg" alt="Nettoyage toiture">
+    <img src="images/haie.jpg" alt="Taille de haie">
+    <img src="images/tonte.jpg" alt="Tonte pelouse">
+  </div>
+</section>
+
+<section>
+  <h2>Zone d’intervention</h2>
+  <p>Nous intervenons en <strong>Occitanie</strong> pour particuliers, professionnels et copropriétés.</p>
+</section>
+
+<div class="contact">
+  <h2>Contact</h2>
+  <p>📞 <a href="tel:0769721800">07 69 72 18 00</a></p>
+</div>
+
 <footer>
-  © 2026 Jeremservice11 – Tous droits réservés
+  © Jeremservice11 – Tous droits réservés
 </footer>
 
 </body>
