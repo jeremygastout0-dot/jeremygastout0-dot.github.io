@@ -2,21 +2,23 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-
-<!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZK5W0TE12"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XZK5W0TE12');
-</script>
-
 <title>Jeremservices11 – Entretien de jardin dans l’Aude (11)</title>
 
-<meta name="description" content="Jeremservices11 : entretien de jardin, tonte, taille de haies, élagage, nettoyage piscine dans l’Aude (11). Devis gratuit.">
-<meta name="keywords" content="entretien jardin Aude, tonte pelouse 11, taille haies Aude, élagage Carcassonne, jardinier Aude">
+<meta name="description" content="Entretien de jardin, tonte, taille de haies, élagage, nettoyage piscine dans l’Aude (11). Devis gratuit.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GOOGLE ANALYTICS GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZK5W0TE12"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XZK5W0TE12');
+
+function trackEvent(name, params = {}) {
+  gtag('event', name, params);
+}
+</script>
 
 <style>
 body{margin:0;font-family:Arial;background:#f5f5f5;color:#333}
@@ -29,8 +31,8 @@ h2{text-align:center;color:#1f7a1f}
 .card img{width:100%;height:180px;object-fit:cover}
 .card-content{padding:20px}
 .price{font-weight:bold;color:#1f7a1f}
-.avis{background:#fff;padding:20px;border-left:5px solid #ffcc00;margin-bottom:15px}
 footer{background:#222;color:#fff;text-align:center;padding:35px}
+input, textarea{width:100%;padding:12px;margin-bottom:10px}
 </style>
 </head>
 
@@ -39,8 +41,16 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 <header>
 <h1>Jeremservices11</h1>
 <p>Entretien de jardin & espaces verts – Aude (11)</p>
-<a class="btn" href="tel:0769721800">📞 07 69 72 18 00</a>
-<a class="btn" href="nettoyage.html">🧼 Nettoyage bâtiments</a>
+
+<a class="btn" href="tel:0769721800"
+onclick="trackEvent('clic_telephone',{page:'jardin'});">
+📞 07 69 72 18 00
+</a>
+
+<a class="btn" href="nettoyage.html"
+onclick="trackEvent('clic_page_nettoyage',{page:'jardin'});">
+🧼 Nettoyage bâtiments
+</a>
 </header>
 
 <section>
@@ -49,7 +59,7 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 <div class="grid">
 
 <div class="card">
-<img src="images/tonte.png.PNG" alt="Tonte de pelouse Aude">
+<img src="images/tonte.png.PNG">
 <div class="card-content">
 <h3>Tonte de pelouse</h3>
 <p class="price">À partir de 30 €</p>
@@ -57,7 +67,7 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 </div>
 
 <div class="card">
-<img src="images/haie.png.PNG" alt="Taille de haies Aude">
+<img src="images/haie.png.PNG">
 <div class="card-content">
 <h3>Taille de haies</h3>
 <p class="price">À partir de 40 €</p>
@@ -65,7 +75,7 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 </div>
 
 <div class="card">
-<img src="images/elagage.png.PNG" alt="Élagage Aude">
+<img src="images/elagage.png.PNG">
 <div class="card-content">
 <h3>Élagage / Abattage</h3>
 <p class="price">À partir de 80 €</p>
@@ -73,7 +83,7 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 </div>
 
 <div class="card">
-<img src="images/fleurs.png.PNG" alt="Plantation fleurs Aude">
+<img src="images/fleurs.png.PNG">
 <div class="card-content">
 <h3>Plantation & entretien</h3>
 <p class="price">À partir de 25 €</p>
@@ -81,7 +91,7 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 </div>
 
 <div class="card">
-<img src="images/piscine.png.png" alt="Nettoyage piscine Aude">
+<img src="images/piscine.png.png">
 <div class="card-content">
 <h3>Nettoyage piscine</h3>
 <p class="price">À partir de 60 €</p>
@@ -92,19 +102,21 @@ footer{background:#222;color:#fff;text-align:center;padding:35px}
 </section>
 
 <section>
-<h2>⭐ Avis clients</h2>
-<div class="avis">⭐⭐⭐⭐⭐ Travail sérieux et rapide</div>
-<div class="avis">⭐⭐⭐⭐⭐ Très professionnel</div>
-<a class="btn" href="https://maps.app.goo.gl/pXzSMv5Pq8gU4rPh7" target="_blank">Voir les avis Google</a>
-</section>
+<h2>📋 Demande de devis gratuit</h2>
 
-<section>
-<h2>📍 Zone d’intervention</h2>
-<p style="text-align:center">
-Carcassonne, Narbonne, Lézignan-Corbières, Castelnaudary, Limoux et tout le département de l’Aude (11)
-</p>
+<form action="mailto:jeremservices11@gmail.com"
+method="post" enctype="text/plain"
+onsubmit="trackEvent('envoi_devis_jardin',{conversion:true});">
 
-<iframe src="https://www.google.com/maps?q=Aude%2011&output=embed" width="100%" height="300" style="border:0;"></iframe>
+<input type="text" name="Nom" placeholder="Votre nom" required>
+<input type="tel" name="Téléphone" placeholder="Votre téléphone" required>
+<textarea name="Message" placeholder="Décrivez votre besoin"></textarea>
+
+<button class="btn" type="submit"
+onclick="trackEvent('clic_bouton_devis',{page:'jardin'});">
+📨 Envoyer la demande
+</button>
+</form>
 </section>
 
 <footer>
