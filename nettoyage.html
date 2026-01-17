@@ -2,22 +2,19 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Nettoyage extérieur & bâtiments – Aude (11)</title>
+
+<title>Nettoyage Aude (11) | Terrasse, garage, vitres – Jeremservices11</title>
 
 <meta name="description" content="Nettoyage terrasse, garage, vitres, parties communes dans l’Aude (11). Devis gratuit.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- GOOGLE ANALYTICS GA4 -->
+<!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZK5W0TE12"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-XZK5W0TE12');
-
-function trackEvent(name, params = {}) {
-  gtag('event', name, params);
-}
 </script>
 
 <style>
@@ -29,8 +26,9 @@ section{padding:50px 20px;max-width:1100px;margin:auto}
 .card img{width:100%;height:180px;object-fit:cover}
 .card-content{padding:20px}
 .price{font-weight:bold;color:#004d40}
-.btn{display:inline-block;padding:14px 22px;background:#ffcc00;color:#000;font-weight:bold;border-radius:6px;text-decoration:none}
-input, textarea{width:100%;padding:12px;margin-bottom:10px}
+.btn{display:inline-block;margin:10px;padding:14px 22px;background:#ffcc00;color:#000;font-weight:bold;border-radius:6px;text-decoration:none}
+.whatsapp{background:#25D366;color:#fff}
+input,textarea{width:100%;padding:12px;margin-bottom:10px}
 </style>
 </head>
 
@@ -38,19 +36,20 @@ input, textarea{width:100%;padding:12px;margin-bottom:10px}
 
 <header>
 <h1>Nettoyage extérieur & bâtiments</h1>
-<p>Aude (11) – Devis gratuit</p>
+<p>Aude (11) – Particuliers & professionnels</p>
 
-<a class="btn" href="tel:0769721800"
-onclick="trackEvent('clic_telephone',{page:'nettoyage'});">
-📞 07 69 72 18 00
-</a>
+<a class="btn" href="tel:0769721800">📞 07 69 72 18 00</a>
+<a class="btn whatsapp" href="https://wa.me/33769721800" target="_blank">💬 WhatsApp</a>
+<a class="btn" href="index.html">🌿 Jardin</a>
 </header>
 
 <section>
+<h2>🧼 Prestations & tarifs</h2>
+
 <div class="grid">
 
 <div class="card">
-<img src="images/nettoyage-terrasse .PNG">
+<img src="images/nettoyage-terrasse .PNG" alt="Nettoyage terrasse Aude">
 <div class="card-content">
 <h3>Nettoyage terrasse</h3>
 <p class="price">À partir de 50 €</p>
@@ -58,7 +57,7 @@ onclick="trackEvent('clic_telephone',{page:'nettoyage'});">
 </div>
 
 <div class="card">
-<img src="images/nettoyage-garage.PNG">
+<img src="images/nettoyage-garage.PNG" alt="Nettoyage garage Aude">
 <div class="card-content">
 <h3>Nettoyage garage</h3>
 <p class="price">À partir de 60 €</p>
@@ -66,7 +65,7 @@ onclick="trackEvent('clic_telephone',{page:'nettoyage'});">
 </div>
 
 <div class="card">
-<img src="images/nettoyage-vitres.PNG">
+<img src="images/nettoyage-vitres.PNG" alt="Nettoyage vitres Aude">
 <div class="card-content">
 <h3>Nettoyage vitres</h3>
 <p class="price">À partir de 30 €</p>
@@ -74,9 +73,33 @@ onclick="trackEvent('clic_telephone',{page:'nettoyage'});">
 </div>
 
 <div class="card">
-<img src="images/nettoyage-communs.PNG">
+<img src="images/nettoyage-communs.PNG" alt="Nettoyage parties communes Aude">
 <div class="card-content">
 <h3>Parties communes</h3>
+<p class="price">Sur devis</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/nettoyage-hp.PNG" alt="Nettoyage haute pression Aude">
+<div class="card-content">
+<h3>Haute pression</h3>
+<p class="price">Sur devis</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/nettoyage-poubelles.jpg" alt="Nettoyage poubelles Aude">
+<div class="card-content">
+<h3>Nettoyage poubelles</h3>
+<p class="price">À partir de 20 €</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/nettoyage-remise.jpg" alt="Nettoyage remise Aude">
+<div class="card-content">
+<h3>Remise / débarras</h3>
 <p class="price">Sur devis</p>
 </div>
 </div>
@@ -87,19 +110,13 @@ onclick="trackEvent('clic_telephone',{page:'nettoyage'});">
 <section>
 <h2>📋 Demande de devis nettoyage</h2>
 
-<form action="mailto:jeremservices11@gmail.com"
-method="post" enctype="text/plain"
-onsubmit="trackEvent('envoi_devis_nettoyage',{conversion:true});">
-
+<form action="mailto:jeremservices11@gmail.com" method="post" enctype="text/plain">
 <input type="text" name="Nom" placeholder="Votre nom" required>
 <input type="tel" name="Téléphone" placeholder="Votre téléphone" required>
-<textarea name="Message" placeholder="Décrivez votre besoin"></textarea>
-
-<button class="btn" type="submit"
-onclick="trackEvent('clic_bouton_devis',{page:'nettoyage'});">
-📨 Envoyer la demande
-</button>
+<textarea name="Message" placeholder="Expliquez votre besoin"></textarea>
+<button class="btn" type="submit">📨 Envoyer</button>
 </form>
+
 </section>
 
 </body>
